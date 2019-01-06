@@ -535,12 +535,6 @@ export default {
   padding: 0 8px;
   overflow: hidden;
 }
-/* .coinImg img { */
-/* margin-top: 10px; */
-/* margin-left: 8px; */
-/* margin-right: 15px; */
-/* overflow: hidden; */
-/* } */
 hr {
   margin-top: 24px;
   border: 1px solid rgba(240, 240, 240, 1);
