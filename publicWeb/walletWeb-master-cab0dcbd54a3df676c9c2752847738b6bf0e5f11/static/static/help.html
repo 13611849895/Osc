@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>帮助中心</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        html,body {
+            padding: 0;
+            margin: 0;
+            background-color: #232324
+        }
+        .dv {
+            width: 100%;
+            height: 100%;
+        }
+        .header {
+            width: 100%;
+            height: 4rem;
+            background-color: #262426;
+            box-shadow:0rem 0.125rem 0.437rem 0rem rgba(25,25,26,1);
+        }
+        .header img {
+            position: absolute;
+            top: 1.1125rem;
+            left: 1.5rem;
+            width: 9.417rem;
+            height: 2.252rem;
+        }
+        .menu {
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 95%;
+            height: 100%;
+            background-color: #343238;
+            border-radius: 0.2rem;
+            color: #B3B3B3
+        }
+        .inner {
+            padding: 1.2rem 0;
+            border-bottom: 0.1rem solid #232326  
+        }
+        .listPanel {
+            color: #fff;
+            height: 1.4rem;
+            line-height: 1.4rem;
+        }
+        .showInner {
+          padding-top: 0.8rem;
+          color: #B3B3B3;
+            display: none;
+        }
+        .listPanel img {
+            float: right;
+            width: 1.2rem;
+            right: 0.3rem
+            /* vertical-align: middle; */
+            
+        }
+        .shu {
+            color: #10C796
+        }
+        .tips {
+            color: #CCCCCC;
+            font-weight: 700
+        }
+        .tip {
+            padding-left: 1.5rem;
+            height: 4rem;
+            line-height: 4rem
+        }
+        .bot{
+            display: inline-block;
+            margin-bottom: 0.7rem
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="dv">
+        <div class="header">
+            <img src="./logo@2x.png">
+        </div>
+        <div class="tip">
+            <span class="shu">|</span>
+            <span class="tips">常见问题</span>
+        </div>
+        <div class="menu" id="menu">
+            <div class="inner">
+                <div class="listPanel">关于我们
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <strong class="bot">关于 openwallet</strong><br>
+                    <p>openwallet 作为专业数字资产钱包，安全放心、简单易用；</p>
+                    <p>支持多链、多币种管理与兑换，让区块链技术更好地融入你的生活。</p>
+                    <strong class="bot">关于Open Source Chain</strong><br>
+                    <p>开源链（OSCH）是第一个把电子行业的广义IP以智能合约的方法进行量化的平台。开源链平台对区块基础设施中性 （包括以太坊 ，星云链等），来构建电子行业的IP应用层。开源链平台用区块链技术驱动传统电子行业的技术开发流程、供应链、IP交易、媒体及网络社区的变革。
+                        把电子行业IP定量化，让数字资产能够自我演化，自我增值，增强参与者信任，从而把价值回馈给所有开源链的参与者。</p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="listPanel">如何备份钱包？
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <strong class="bot">导出助记词</strong><br>
+                    <p>点击 “我” 中管理钱包 ——> 选择你自己创建的 HD 钱包（分层确定性钱包，使用 imToken 生成的即是这种类型的钱包）
+                    导出助记词 ——> 输入钱包密码
+                    备份助记词（按顺序记录）并点击 “下一步” ——> 按顺序输入你刚才备份的助记词用以二次确认 ——> 确认
+                    <p>注意：助记词移除之前一定要确保已经备份，移除之后，当前钱包已经没有助记词，但是用户可以通过导入助记词功能重新导入该钱包！</p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="listPanel">如何创建钱包？
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <p>目前Open Wallet只支持单钱包，初次登入可以创建钱包或在删除原有钱包后可以创建新钱包</p>
+                    <p>钱包名（必填）——> 密码（非常重要！这也是交易密码，如果遗忘则不能找回）——> 确认密码 ——> 创建钱包</p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="listPanel">如何导入明文私钥？
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <p>点击 “我” ——> 管理钱包 ——> 导入钱包 ——> 私钥 ——> 将私钥粘贴进文本框内 / 扫描私钥二维码 ——> 用户自定义密码 （可以重置密码）——>
+                        确认密码（非常重要！一定要记住密码）——>
+                        开始导入 </p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="listPanel">如何导入助记词
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <p>将助记词粘贴在文本框中 或 扫描助记词二维码（注意每个助记词之间以空格分隔）——> 用户自定义密码 ——> 确认密码（非常重要！一定要记住密码） ——> 开始导入</p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="listPanel">如何进行转账、收款？
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <strong class="bot">转账</strong><br>
+                    <p>在资产列表页，点击你想转账的资产类型，如OSCH ——> 点击转账输入收款人地址（或者通过扫码） ——> 输入转账金额 ——> 输入转账的备注信息 ——> 确认转账注意 ： 转账的速度一般为5秒左右 输入交易密码（钱包密码） ——> 确认</p>
+                    <strong class="bot">收款</strong>
+                    <p>方法一： 在 “资产” 页面，点击钱包地址 ——> 填写收款金额</p>
+                    <p>方法二： 在 “资产” 页面，点击你想收款的资产类型，如Osch ———> 点击收款按钮</p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="listPanel">如何删除钱包？
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <p>重要提示：删除钱包之前一定要确认是否备份该钱包，如果你没有备份，删除之后，再也无法还原该钱包！</p>
+                    <p>删除操作:</p>
+                    <p>点击 “我” 中管理钱包 ——> 进入你想删除的钱包</p>
+                    <p>删除钱包 ——> 输入钱包密码 ——> 确认即可删除</p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="listPanel">为什么有些Token 不显示价格？
+                    <img class="img" src="./list.png">
+                </div>
+                <div class="showInner">
+                    <p>openwallet 目前只从Binance、P网、kraken、Coinbase、Bittrex 这五个交易所中获取价格, 如果你发现这个五个交易所中有的 Token, 在
+                        openwallet
+                        中没有价格显示,
+                        可以发送工单到 <a href="support@consenlabs.com">support@consenlabs.com</a> 联系我们。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.inner').on('click', function () {
+            $(this).children('.showInner').slideDown();
+            if( $(this).children('.showInner').is(':visible')){
+                $(this).children('.listPanel').children('.img').attr('src','./colorDown.png')
+                $(this).siblings().children('.listPanel').children('.img').attr('src','./list.png')
+            }
+            $(this).siblings().children('.showInner').slideUp();
+        })
+    });
+</script>
+
+</html>
